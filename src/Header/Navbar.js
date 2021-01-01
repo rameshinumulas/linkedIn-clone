@@ -24,7 +24,8 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
-      flexGrow:1
+      flexGrow:1,
+      marginBottom:theme.spacing(5)
   },
   iconsGrow:{
       marginLeft:'20%',
@@ -198,7 +199,7 @@ export default function Navbar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static" color="#FFFFF" >
+      <AppBar position="fixed" color="#FFFFF" >
         <Toolbar>
         <img src={linkdin} alt="main_image" style={{width:30,height:30,cursor:"pointer"}} />
           <div className={classes.search}>

@@ -1,5 +1,7 @@
 import { Grid } from '@material-ui/core'
 import React from 'react'
+import Postcreate from './centercards/Postcreate'
+import Show_post from './centercards/Show_post'
 import Card1 from './leftHandCards/Card1'
 import ProfileCard from './leftHandCards/ProfileCard'
 import LinkedinNewscard from './rightHandCards/LinkedinNewscard'
@@ -14,7 +16,8 @@ export default function Home() {
                     <Card1 />
                 </Grid>
                 <Grid item xs={6}>
-                    posts
+                    <Postcreate />
+                    <Show_post />
                 </Grid>
                 <Grid item xs={3}>
                    <LinkedinNewscard />
